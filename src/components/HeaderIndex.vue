@@ -1,12 +1,17 @@
 <template>
-<header>
+<!-- HEADER-NAV -->
+<header class="my-gray-light-bg">
     <nav class="container px-5">
         <div class="row align-items-center">
+    <!-- MAIN LOGO -->
             <div class="col">
                 <a href="#">
                     <img id="logo-header" src="../assets/img/logo-dark.png" alt="Landrick logo">
                 </a>
             </div>
+    <!-- MAIN LOGO -->
+
+    <!-- MENU NAV -->
             <div class="col">
                 <ul class="d-flex mb-0 gap-5">
                     <li class="text-uppercase list-unstyled" v-for="(link, index) in linksNavigation" :key="index">
@@ -14,6 +19,9 @@
                     </li>
                 </ul>
             </div>
+    <!-- MENU NAV -->
+
+    <!-- BUTTON NAV -->
             <div class="col">
                 <div id="buttons-navigation" class="d-flex justify-content-end align-items-center gap-3">
                     <a class="btn">
@@ -30,9 +38,12 @@
                     </a>
                 </div>
             </div>
+    <!-- BUTTON NAV -->
+
         </div>
     </nav>
 </header>
+<!-- HEADER-NAV -->
 </template>
 
 
