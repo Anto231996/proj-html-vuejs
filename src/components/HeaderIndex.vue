@@ -1,6 +1,6 @@
 <template>
 <!-- HEADER-NAV -->
-<header class="my-gray-light-bg fixed-top">
+<header class="my-light-gray-bg fixed-top">
     <nav class="container px-5">
         <div class="row align-items-center">
     <!-- MAIN LOGO -->
@@ -15,7 +15,7 @@
             <div class="col">
                 <ul class="d-flex mb-0 gap-5">
                     <li class="text-uppercase list-unstyled" v-for="(link, index) in linksNavigation" :key="index">
-                        <a class="text-decoration-none" :href="link.url">{{ link.title }}</a>
+                        <a :id="(index === activeLink) ? 'active-link' : '' "  @click="changeActiveLink(index)" class="text-decoration-none" :href="link.url">{{ link.title }}</a>
                     </li>
                 </ul>
             </div>
@@ -53,6 +53,9 @@ export default {
 
     data:function() {
         return{
+
+            activeLink: 1,
+
             linksNavigation:[
                 {
                     title: 'home',
@@ -75,12 +78,21 @@ export default {
                 },
             ]
         }
+    },
+
+    methods:{
+        changeActiveLink(index){
+            if (this.linksNavigation[index] !== undefined){
+                this.activeLink = index;
+            }
+        }
     }
 }
 </script>
 
 
 <style lang="scss">
+
 header{
     height: 80px;
 
@@ -94,7 +106,7 @@ header{
                 height: 30px;
             }
 
-            div.col ul li a{
+            a{
                 color: #161C2D;
             }
             

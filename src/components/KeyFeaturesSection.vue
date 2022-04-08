@@ -1,6 +1,6 @@
 <template>
 <!-- SECTION KEY FEATURES -->
-<section class="container p-5">
+<section class="container p-5 mb-5">
     <!-- FEATURES TEXT -->
     <div class="row mb-5">
         <div class="col-5">
@@ -68,7 +68,7 @@ export default {
 
 div.feature-card:hover{
     position: relative;
-    bottom: 20px;
+    bottom: 10px;
 }
 
 .square-bg{

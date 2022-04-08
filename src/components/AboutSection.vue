@@ -1,7 +1,7 @@
 <template>
 <section>
 <!-- SECTION ABOUT -->
-    <section id="about" class="border-bottom my-gray-light-bg">
+    <section id="about" class="border-bottom my-light-gray-bg">
         <div class="container p-5">
             <div class="row align-items-center">
 
@@ -30,7 +30,7 @@
 <!-- /SECTION ABOUT -->
 
 <!-- SECTION SPONSOR-BRANDS -->
-    <section id="sponsor-brands" class="my-gray-light-bg p-5 mb-5">
+    <section id="sponsor-brands" class="my-light-gray-bg p-5 mb-5">
         <div class="container">
             <div class="row">
                 <img class="col-2" v-for="(sponsor, index) in sponsorBrands" :key="index" :src="require(`../assets/img/${sponsor.logo}`)" :alt="sponsor.name + ' ' + 'logo'">
