@@ -2,7 +2,7 @@
 <section>
 <!-- SECTION ABOUT -->
     <section id="about" class="border-bottom my-light-gray-bg">
-        <div class="container p-5">
+        <div class="container p-5 mb-5">
             <div class="row align-items-center">
 
     <!-- ABOUT TEXT -->
@@ -20,7 +20,7 @@
     
     <!-- ABOUT IMG -->
                 <div class="col-6 d-flex justify-content-center">
-                    <img src="../assets/img/about.png" alt="ragazzo seduto al pc">
+                    <img class="img-fluid" src="../assets/img/about.png" alt="ragazzo seduto al pc">
                 </div>
     <!-- /ABOUT IMG -->
 
@@ -89,13 +89,13 @@ export default {
 section#about{
     padding-top: 150px;
 
-    div.container div.row div.col-6 pre{
+    pre{
         font-size: .8rem;
         padding: .3rem;
         border-radius: 15px;
     }
 
-    div.container div.row div.col-6 a{
+    a{
         border: 1px solid #2F55D4;
     }
 }

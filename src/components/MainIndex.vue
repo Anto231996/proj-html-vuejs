@@ -3,6 +3,7 @@
     <AboutSection/>
     <KeyFeaturesSection/>
     <QuickStartSection/>
+    <ToolsSection/>
 </main>
 </template>
 
@@ -10,13 +11,15 @@
 import AboutSection from './AboutSection.vue'
 import KeyFeaturesSection from './KeyFeaturesSection.vue'
 import QuickStartSection from './QuickStartSection.vue'
+import ToolsSection from './ToolsSection.vue'
 
 export default {
     name:'MainIndex',
     components:{
         AboutSection,
         KeyFeaturesSection,
-        QuickStartSection
+        QuickStartSection,
+        ToolsSection
     }
 }
 </script>

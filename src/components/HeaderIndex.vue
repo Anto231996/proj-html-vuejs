@@ -14,8 +14,9 @@
     <!-- MENU NAV -->
             <div class="col">
                 <ul class="d-flex mb-0 gap-5">
-                    <li class="text-uppercase list-unstyled" v-for="(link, index) in linksNavigation" :key="index">
-                        <a :id="(index === activeLink) ? 'active-link' : '' "  @click="changeActiveLink(index)" class="text-decoration-none" :href="link.url">{{ link.title }}</a>
+                    <li class="d-flex align-items-center text-uppercase list-unstyled fw-bold" v-for="(link, index) in linksNavigation" :key="index">
+                        <a :id="(index === activeLink) ? 'active-link' : '' "  @click="changeActiveLink(index)" class="text-decoration-none me-2" :href="link.url">{{ link.title }} </a>
+                        <i v-if="link.dropdownArrow !== false" class="fas fa-angle-down"></i>
                     </li>
                 </ul>
             </div>
@@ -59,22 +60,26 @@ export default {
             linksNavigation:[
                 {
                     title: 'home',
-                    url:'#'
+                    url:'#',
+                    dropdownArrow: false
                 },
 
                 {
                     title: 'landing',
-                    url:'#'
+                    url:'#',
+                    dropdownArrow: true
                 },
 
                 {
                     title: 'pages',
-                    url:'#'
+                    url:'#',
+                    dropdownArrow: true
                 },
 
                 {
                     title: 'docs',
-                    url:'#'
+                    url:'#',
+                    dropdownArrow: true
                 },
             ]
         }
