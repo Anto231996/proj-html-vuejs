@@ -1,5 +1,5 @@
 <template>
-<div>
+<section>
 <!-- SECTION ABOUT -->
     <section id="about" class="border-bottom my-gray-light-bg">
         <div class="container p-5">
@@ -12,33 +12,33 @@
                     <p class="mb-4 text-secondary">Launch your campaign and benefit from our expertise on designign and managing conversion centered bootstrap4 html page.</p>
                     <div class="mb-4 fw-bold">
                         <a class="me-3 text-decoration-none p-2 text-white my-blue-bg rounded shadow" href="#">Get Started</a>
-                        <a class="text-decoration-none p-2 my-blue-text rounded shadow" href="#">Documentation</a>
+                        <a class="text-decoration-none p-2 my-blue-text rounded" href="#">Documentation</a>
                     </div>
                     <p class="text-secondary">Current Version: v2.6.0</p>
                 </div>
-    <!-- ABOUT TEXT -->
+    <!-- /ABOUT TEXT -->
     
     <!-- ABOUT IMG -->
                 <div class="col-6 d-flex justify-content-center">
                     <img src="../assets/img/about.png" alt="ragazzo seduto al pc">
                 </div>
-    <!-- ABOUT IMG -->
+    <!-- /ABOUT IMG -->
 
             </div>
         </div>
     </section>
-<!-- SECTION ABOUT -->
+<!-- /SECTION ABOUT -->
 
 <!-- SECTION SPONSOR-BRANDS -->
-    <section id="sponsor-brands" class="my-gray-light-bg p-5">
+    <section id="sponsor-brands" class="my-gray-light-bg p-5 mb-5">
         <div class="container">
             <div class="row">
                 <img class="col-2" v-for="(sponsor, index) in sponsorBrands" :key="index" :src="require(`../assets/img/${sponsor.logo}`)" :alt="sponsor.name + ' ' + 'logo'">
             </div>
         </div>
     </section>
-<!-- SECTION SPONSOR-BRANDS -->
-</div>
+<!-- /SECTION SPONSOR-BRANDS -->
+</section>
 </template>
 
 
@@ -87,7 +87,7 @@ export default {
 
 <style lang="scss">
 section#about{
-    padding-top: 100px;
+    padding-top: 150px;
 
     div.container div.row div.col-6 pre{
         font-size: .8rem;

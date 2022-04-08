@@ -1,6 +1,6 @@
 <template>
 <!-- HEADER-NAV -->
-<header class="my-gray-light-bg">
+<header class="my-gray-light-bg fixed-top">
     <nav class="container px-5">
         <div class="row align-items-center">
     <!-- MAIN LOGO -->
@@ -9,7 +9,7 @@
                     <img id="logo-header" src="../assets/img/logo-dark.png" alt="Landrick logo">
                 </a>
             </div>
-    <!-- MAIN LOGO -->
+    <!-- /MAIN LOGO -->
 
     <!-- MENU NAV -->
             <div class="col">
@@ -19,7 +19,7 @@
                     </li>
                 </ul>
             </div>
-    <!-- MENU NAV -->
+    <!-- /MENU NAV -->
 
     <!-- BUTTON NAV -->
             <div class="col">
@@ -38,12 +38,12 @@
                     </a>
                 </div>
             </div>
-    <!-- BUTTON NAV -->
+    <!-- /BUTTON NAV -->
 
         </div>
     </nav>
 </header>
-<!-- HEADER-NAV -->
+<!-- /HEADER-NAV -->
 </template>
 
 
@@ -76,7 +76,6 @@ export default {
             ]
         }
     }
-
 }
 </script>
 
