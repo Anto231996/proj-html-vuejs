@@ -42,7 +42,7 @@
                     <p class="text-secondary mb-4">Start working with <span class="my-blue-text fw-bold">Landrick</span> that can provide everthing you need to generate <br> awareness, drive traffic, connect.</p>
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="Email Address">
-                        <button class="btn btn-dark text-white btn-outline-secondary" type="sumbmit">Get Started</button>
+                        <button id="btn-getStarted" class="btn text-white btn-outline-secondary" type="sumbmit">Get Started</button>
                     </div>
                 </div>
             </div>
@@ -117,5 +117,9 @@ export default {
         span#plans{
             padding: .5rem 1.5rem;
         }
+    }
+
+    button#btn-getStarted{
+        background-color: #2F55D4
     }
 </style>

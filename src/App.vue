@@ -2,6 +2,7 @@
   <div id="app">
     <HeaderIndex/>
     <MainIndex/>
+    <FooterIndex/>
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 <script>
 import HeaderIndex from './components/HeaderIndex.vue'
 import MainIndex from './components/MainIndex.vue'
+import FooterIndex from './components/FooterIndex.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderIndex,
-    MainIndex
+    MainIndex,
+    FooterIndex
   }
 }
 </script>

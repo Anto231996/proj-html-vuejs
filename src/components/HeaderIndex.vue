@@ -6,7 +6,7 @@
     <!-- MAIN LOGO -->
             <div class="col">
                 <a href="#">
-                    <img id="logo-header" src="../assets/img/logo-dark.png" alt="Landrick logo">
+                    <img class="main-logo" src="../assets/img/logo-dark.png" alt="Landrick logo">
                 </a>
             </div>
     <!-- /MAIN LOGO -->
@@ -106,10 +106,6 @@ header{
 
         div.row{
             height: 100%;
-
-            div.col a img#logo-header{
-                height: 30px;
-            }
 
             a{
                 color: #3C4858;
