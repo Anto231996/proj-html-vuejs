@@ -7,8 +7,8 @@
 
     <!-- ABOUT TEXT -->
                 <div class="col-6">
-                    <pre class="d-inline my-blue-text my-alice-blue-bg border fw-bold">Development</pre>
-                    <h1 class="mb-4 fw-bold pt-3">A Complete<br>Developer Toolset</h1>
+                    <span class="d-inline-block my-blue-text my-alice-blue-bg border fw-bold rounded-pill mb-3">Development</span>
+                    <h1 class="mb-4 fw-bold">A Complete<br>Developer Toolset</h1>
                     <p class="mb-4 text-secondary">Launch your campaign and benefit from our expertise on designign and managing conversion centered bootstrap4 html page.</p>
                     <div class="mb-4 fw-bold">
                         <a class="me-3 text-decoration-none p-2 text-white my-blue-bg rounded shadow" href="#">Get Started</a>
@@ -89,10 +89,9 @@ export default {
 section#about{
     padding-top: 150px;
 
-    pre{
+    span{
         font-size: .8rem;
         padding: .3rem;
-        border-radius: 15px;
     }
 
     a{
@@ -101,6 +100,8 @@ section#about{
 }
 
 section#sponsor-brands{
+    border-radius: 0 0 45% 45%;
+    
     img{
         height: 30px;
     }

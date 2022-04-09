@@ -26,4 +26,20 @@
     border-radius: 50%;
     font-size: .5rem;
     padding: .2rem;
+    border: 2px solid;
+}
+
+.my-fa-check-green{
+    border-color: #2ECA8B;
+    color: #2ECA8B;
+}
+
+.my-fa-check-blue{
+    border-color: #2F55D4;
+    color: #2F55D4;
+}
+
+.wrapper{
+    width: 700px;
+    margin: 0 auto;
 }

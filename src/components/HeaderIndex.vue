@@ -14,9 +14,9 @@
     <!-- MENU NAV -->
             <div class="col">
                 <ul class="d-flex mb-0 gap-5">
-                    <li class="d-flex align-items-center text-uppercase list-unstyled fw-bold" v-for="(link, index) in linksNavigation" :key="index">
+                    <li class="d-flex align-items-center text-uppercase fw-bold" v-for="(link, index) in linksNavigation" :key="index">
                         <a :id="(index === activeLink) ? 'active-link' : '' "  @click="changeActiveLink(index)" class="text-decoration-none me-2" :href="link.url">{{ link.title }} </a>
-                        <i v-if="link.dropdownArrow !== false" class="fas fa-angle-down"></i>
+                        <i v-if="link.dropdownArrow !== false" class="fas fa-angle-down text-secondary"></i>
                     </li>
                 </ul>
             </div>
@@ -112,7 +112,7 @@ header{
             }
 
             a{
-                color: #161C2D;
+                color: #3C4858;
             }
             
             div.col div#buttons-navigation a.square-button{

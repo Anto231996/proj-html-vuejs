@@ -4,7 +4,7 @@
     <!-- FEATURES TEXT -->
     <div class="row mb-5">
         <div class="col-5">
-            <h3 class="fw-bold">Key Features</h3>
+            <h2 class="fw-bold mb-4">Key Features</h2>
             <p class="text-secondary">Start Working with <span class="my-blue-text fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect</p>
         </div>
     </div>
@@ -13,8 +13,8 @@
     <!-- FEATURES CARDS -->
     <div class="row">
         <div class="feature-card col-3 p-2" v-for="(card, index) in featureCards" :key="index">
-            <div class="border rounded p-4">
-                <div class="square-bg d-flex justify-content-center align-items-center rounded mb-4">
+            <div class="border rounded-3 p-4">
+                <div class="square-bg d-flex justify-content-center align-items-center rounded-3 mb-4">
                     <i :class="card.icon" class="fa-2x my-blue-text"></i>
                 </div>
                 <h6 class="fw-bold">{{ card.title }}</h6>
