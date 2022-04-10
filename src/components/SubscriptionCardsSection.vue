@@ -13,7 +13,7 @@
 
         <!-- SUBSCRIPTION CARD PLANS -->
         <div class="row mb-5">
-            <div class="col-4" v-for="(card, index) in subscriptionPlans" :key="index">
+            <div class="col-12 col-lg-4 mb-5" v-for="(card, index) in subscriptionPlans" :key="index">
                 <div class="card p-4">
                     <div class="card-body">
                         <span id="plans" class="d-inline-block fw-bold my-blue-text my-alice-blue-bg border rounded-pill mb-3">{{ card.planType }}</span>
@@ -35,15 +35,13 @@
         <!-- /SUBSCRIPTION CARD PLANS -->
 
         <!-- SUBMIT -->
-        <div class="row text-center pt-5 mb-5">
-            <div class="col-12">
-                <div class="wrapper">
-                    <h2 class="fw-bold mb-4">Want to be among the first to find out?</h2>
-                    <p class="text-secondary mb-4">Start working with <span class="my-blue-text fw-bold">Landrick</span> that can provide everthing you need to generate <br> awareness, drive traffic, connect.</p>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                        <button id="btn-getStarted" class="btn text-white btn-outline-secondary" type="sumbmit">Get Started</button>
-                    </div>
+        <div class="row text-center justify-content-center pt-5 mb-5">
+            <div class="col-12 col-lg-6">
+                <h2 class="fw-bold mb-4">Want to be among the first to find out?</h2>
+                <p class="text-secondary mb-4">Start working with <span class="my-blue-text fw-bold">Landrick</span> that can provide everthing you need to generate <br> awareness, drive traffic, connect.</p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Email Address">
+                    <button id="btn-getStarted" class="btn text-white btn-outline-secondary" type="sumbmit">Get Started</button>
                 </div>
             </div>
         </div>

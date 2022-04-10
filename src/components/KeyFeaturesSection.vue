@@ -3,9 +3,9 @@
 <section class="container p-5 mb-5">
     <!-- FEATURES TEXT -->
     <div class="row mb-5">
-        <div class="col-5">
+        <div class="col">
             <h2 class="fw-bold mb-4">Key Features</h2>
-            <p class="text-secondary">Start Working with <span class="my-blue-text fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect</p>
+            <p class="text-secondary">Start Working with <span class="my-blue-text fw-bold">Landrick</span> that can provide everything you need to generate <br> awareness, drive traffic, connect</p>
         </div>
     </div>
     <!-- /FEATURES TEXT -->
@@ -72,7 +72,7 @@ export default {
 
 div.feature-card:hover{
     position: relative;
-    transform: translateY(-20px);
+    transform: translateY(-12px);
 }
 
 div.feature-card{

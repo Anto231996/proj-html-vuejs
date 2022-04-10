@@ -1,6 +1,6 @@
 <template>
 <!-- SECTION QUICK START -->
-<section class="wrapper mb-5">
+<section>
     <div class="container py-5">
         <!-- QUICK START TEXT -->
         <div class="row text-center">
@@ -13,8 +13,8 @@
         <!-- /QUICK START TEXT -->
 
         <!-- HOW TO INSTALL -->
-        <div class="row">
-            <div class="col bg-dark p-4 rounded-3 mb-4">
+        <div class="row justify-content-center px-3">
+            <div class="col-12 col-lg-7 bg-dark p-4 rounded-3 mb-4">
                 <ul class="d-flex my-dark-gray rounded border border-secondary mb-3 p-0">
                     <li :class="(index === activeButton) ? 'bg-dark' : '' "  @click="changeActiveButton(index)" class="col btn text-white m-0" v-for="(button, index) in buttonsQuickStart" :key="index">{{ button.name }}</li>
                 </ul>
@@ -25,7 +25,7 @@
                     <span class="text-secondary">{{ buttonsQuickStart[activeButton].globalInstall }}</span>
                 </div>
             </div>
-            <div class="d-flex align-items-center px-0">
+            <div class="col-12 col-lg-7 d-flex align-items-center px-0">
                 <i class="fas fa-check my-fa-check-green me-2"></i><span class="footer-text text-secondary me-5">Organize your data</span>
                 <i class="fas fa-check my-fa-check-green me-2"></i><span class="footer-text text-secondary">Work with any team</span>
             </div>

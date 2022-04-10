@@ -13,18 +13,17 @@
 
     <!-- MENU NAV -->
             <div class="col">
-                <ul class="d-flex mb-0 gap-5">
-                    <li class="d-flex align-items-center text-uppercase fw-bold" v-for="(link, index) in linksNavigation" :key="index">
+                <ul class="d-flex p-0 mb-0 gap-4">
+                    <li class="list-unstyled text-uppercase fw-bold" v-for="(link, index) in linksNavigation" :key="index">
                         <a :id="(index === activeLink) ? 'active-link-header' : '' "  @click="changeActiveLink(index)" class="d-flex align-items-center text-decoration-none gap-2" :href="link.url">{{ link.title }} <i v-if="link.dropdownArrow !== false" class="fas fa-angle-down"></i></a>
-                        
                     </li>
                 </ul>
             </div>
     <!-- /MENU NAV -->
 
     <!-- BUTTON NAV -->
-            <div class="col">
-                <div id="buttons-navigation" class="d-flex justify-content-end align-items-center gap-3">
+            <div class="col d-none d-lg-inline-block">
+                <div id="buttons-navigation" class="d-flex justify-content-end gap-3">
                     <a class="btn">
                         <i class="fas fa-search text-secondary"></i>
                     </a>
@@ -107,15 +106,15 @@ header{
         div.row{
             height: 100%;
 
-            a{
+            ul li a{
                 color: #3C4858;
             }
 
-            a:hover{
+            ul li a:hover{
                 color: #2F55D4;
             }
             
-            div.col div#buttons-navigation a.square-button{
+            div#buttons-navigation a.square-button{
                 height: 40px;
                 width: 40px;
                 background-color: #2F55D41A;
@@ -124,11 +123,11 @@ header{
                 align-items: center;
             }
 
-            div.col div#buttons-navigation a.square-button:hover{
+            div#buttons-navigation a.square-button:hover{
                 background-color: #2F55D4;
             }
 
-            div.col div#buttons-navigation a.square-button:hover i{
+            div#buttons-navigation a.square-button:hover i{
                 color: white;
             }
         }

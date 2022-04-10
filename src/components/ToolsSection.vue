@@ -4,7 +4,7 @@
     <div class="row align-items-center">
         
         <!-- TOOLS TEXT -->
-        <div class="col-6">
+        <div class="col-12 col-md-6 mb-5">
             <h2 class="mb-4 fw-bold pt-3">Build tools and<br>extensive documention</h2>
             <p class="mb-4 text-secondary">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in Website.</p>
             <ul class="p-0 mb-5">
@@ -15,7 +15,7 @@
         <!-- /TOOLS TEXT -->
 
         <!-- TOOLS IMAGE -->
-        <div class="col-6">
+        <div class="col-12 col-md-6">
             <img class="img-fluid" src="../assets/img/1.png" alt="tools">
         </div>
         <!-- /TOOLS IMAGE -->

@@ -4,7 +4,7 @@
     <div class="container p-5">
         <div class="row">
             <!-- SOCIAL -->
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <a href="#">
                     <img class="main-logo mb-4" src="../assets/img/logo-light.png" alt="Landrick logo">
                 </a>
@@ -16,7 +16,7 @@
             <!-- /SOCIAL -->
 
             <!-- LINKS -->
-            <div class="col-3 d-flex flex-column align-items-center">
+            <div class="col-6 col-md-3">
                 <h5 class="text-white mb-4">Company</h5>
                 <ul class="p-0">
                     <li class="list-unstyled mb-2" v-for="(link, index) in companyListLinks" :key="index">
@@ -24,7 +24,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <h5 class="text-white mb-4">Usefull Links</h5>
                 <ul class="p-0">
                     <li class="list-unstyled mb-2" v-for="(link, index) in usefullLinks" :key="index">
@@ -35,7 +35,7 @@
             <!-- /LINKS -->
 
             <!-- NEWSLETTER -->
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <h5 class="text-white mb-4">Newsletter</h5>
                 <p class="text-secondary">Sign up and receive the latest tips via email.</p>
                 <p class="text-secondary fw-bold">Write your email <span class="text-danger">*</span></p>

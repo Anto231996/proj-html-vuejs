@@ -6,7 +6,7 @@
             <div class="row align-items-center">
 
     <!-- ABOUT TEXT -->
-                <div id="about-text" class="col-6">
+                <div id="about-text" class="col-12 col-md-6">
                     <span class="d-inline-block my-blue-text my-alice-blue-bg border fw-bold rounded-pill mb-3">Development</span>
                     <h1 class="mb-4 fw-bold">A Complete<br>Developer Toolset</h1>
                     <p class="mb-4 text-secondary">Launch your campaign and benefit from our expertise on designign and managing conversion centered bootstrap4 html page.</p>
@@ -19,7 +19,7 @@
     <!-- /ABOUT TEXT -->
     
     <!-- ABOUT IMG -->
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
                     <img class="img-fluid" src="../assets/img/about.png" alt="ragazzo seduto al pc">
                 </div>
     <!-- /ABOUT IMG -->
