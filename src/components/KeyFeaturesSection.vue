@@ -12,15 +12,19 @@
 
     <!-- FEATURES CARDS -->
     <div class="row">
-        <div class="feature-card col-3 p-2" v-for="(card, index) in featureCards" :key="index">
-            <div class="border rounded-3 p-4">
-                <div class="square-bg d-flex justify-content-center align-items-center rounded-3 mb-4">
-                    <i :class="card.icon" class="fa-2x my-blue-text"></i>
+        <div class="feature-card col-sm-6 col-md-6 col-lg-3 p-2" v-for="(card, index) in featureCards" :key="index">
+            <div class="border rounded-3 position-relative p-4">
+                <div class="card-content position-relative">
+                    <div class="square-bg d-flex justify-content-center align-items-center rounded-3 mb-4">
+                        <i :class="card.icon" class="fa-2x my-blue-text"></i>
+                    </div>
+                    <h6 class="fw-bold">{{ card.title }}</h6>
+                    <p class="text-secondary">Composed in a pseudo-Latin language which more or less corresponds.</p>
+                    <a class="my-blue-text text-decoration-none fw-bold" href="#">Read More <i class="fas fa-angle-right"></i></a>
                 </div>
-                <h6 class="fw-bold">{{ card.title }}</h6>
-                <p class="text-secondary">Composed in a pseudo-Latin language which more or less corresponds.</p>
-                <a class="my-blue-text text-decoration-none fw-bold" href="#">Read More <i class="fas fa-angle-right"></i></a>
+                <i :class="card.icon" class="bg-icons fa-9x position-absolute"></i>
             </div>
+
         </div>
     </div>
     <!-- /FEATURES CARDS -->
@@ -68,13 +72,32 @@ export default {
 
 div.feature-card:hover{
     position: relative;
-    bottom: 10px;
+    transform: translateY(-20px);
+}
+
+div.feature-card{
+    transition: all .3s ease-in-out;
+}
+
+div.card-content{
+    z-index: 2;
+}
+
+div.feature-card:hover i.bg-icons{
+    display: inline;
 }
 
 .square-bg{
     height: 60px;
     width: 60px;
     background-color: #2F55D41A;
+}
+
+i.bg-icons{
+    color: aliceblue;
+    top: 15px;
+    right: 10px;
+    display: none;
 }
 
 </style>

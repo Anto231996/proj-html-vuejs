@@ -6,7 +6,7 @@
             <div class="row align-items-center">
 
     <!-- ABOUT TEXT -->
-                <div class="col-6">
+                <div id="about-text" class="col-6">
                     <span class="d-inline-block my-blue-text my-alice-blue-bg border fw-bold rounded-pill mb-3">Development</span>
                     <h1 class="mb-4 fw-bold">A Complete<br>Developer Toolset</h1>
                     <p class="mb-4 text-secondary">Launch your campaign and benefit from our expertise on designign and managing conversion centered bootstrap4 html page.</p>
@@ -86,16 +86,23 @@ export default {
 
 
 <style lang="scss">
+
 section#about{
     padding-top: 150px;
 
-    span{
+    div#about-text span{
         font-size: .8rem;
         padding: .3rem;
     }
 
-    a{
+    div#about-text a{
         border: 1px solid #2F55D4;
+    }
+
+    div#about-text a:hover{
+        color: white;
+        background-color: #2844AA;
+        border: 1px solid #2844AA;
     }
 }
 
@@ -106,4 +113,5 @@ section#sponsor-brands{
         height: 30px;
     }
 }
+
 </style>

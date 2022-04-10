@@ -50,6 +50,10 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+    a:hover{
+        background-color: #2844AA;
+    }
 
 </style>

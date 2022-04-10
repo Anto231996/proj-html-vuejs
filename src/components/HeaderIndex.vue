@@ -15,8 +15,8 @@
             <div class="col">
                 <ul class="d-flex mb-0 gap-5">
                     <li class="d-flex align-items-center text-uppercase fw-bold" v-for="(link, index) in linksNavigation" :key="index">
-                        <a :id="(index === activeLink) ? 'active-link' : '' "  @click="changeActiveLink(index)" class="text-decoration-none me-2" :href="link.url">{{ link.title }} </a>
-                        <i v-if="link.dropdownArrow !== false" class="fas fa-angle-down text-secondary"></i>
+                        <a :id="(index === activeLink) ? 'active-link-header' : '' "  @click="changeActiveLink(index)" class="d-flex align-items-center text-decoration-none gap-2" :href="link.url">{{ link.title }} <i v-if="link.dropdownArrow !== false" class="fas fa-angle-down"></i></a>
+                        
                     </li>
                 </ul>
             </div>
@@ -110,6 +110,10 @@ header{
             a{
                 color: #3C4858;
             }
+
+            a:hover{
+                color: #2F55D4;
+            }
             
             div.col div#buttons-navigation a.square-button{
                 height: 40px;
@@ -118,6 +122,14 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            div.col div#buttons-navigation a.square-button:hover{
+                background-color: #2F55D4;
+            }
+
+            div.col div#buttons-navigation a.square-button:hover i{
+                color: white;
             }
         }
     }

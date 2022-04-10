@@ -9,11 +9,8 @@
                     <img class="main-logo mb-4" src="../assets/img/logo-light.png" alt="Landrick logo">
                 </a>
                 <p class="text-secondary mb-4">Start working with Landrick that can provide everthing you need to generate awareness, drive traffic, connect.</p>
-                <div class="text-white fa-2x">
-                    <i class="fab fa-facebook-square me-2"></i>
-                    <i class="fab fa-instagram-square me-2"></i>
-                    <i class="fab fa-twitter-square me-2"></i>
-                    <i class="fab fa-linkedin"></i>
+                <div id="socials">
+                    <a v-for="(social, index) in socialsList" :key="index" :href="social.URL" :class= "social.logo" class="me-2 fa-2x "></a>
                 </div>
             </div>
             <!-- /SOCIAL -->
@@ -44,7 +41,7 @@
                 <p class="text-secondary fw-bold">Write your email <span class="text-danger">*</span></p>
                 <form class="row g-3">
                     <input type="email" id="inputEmail" class="form-control text-white" placeholder="Your email:">
-                    <button type="submit" id="btn-subscribe" class="btn text-primary">Subscribe</button>
+                    <button type="submit" id="btn-subscribe" class="btn">Subscribe</button>
                 </form>
             </div>
             <!-- /NEWSLETTER -->
@@ -128,6 +125,28 @@ export default {
                     name:'Components',
                     URL:'#'
                 }
+            ],
+
+            socialsList:[
+                {
+                    logo:'fab fa-facebook-square',
+                    URL:'#'
+                },
+
+                {
+                    logo:'fab fa-instagram-square',
+                    URL:'#'
+                },
+
+                {
+                    logo:'fab fa-twitter-square',
+                    URL:'#'
+                },
+
+                {
+                    logo:'fab fa-linkedin',
+                    URL:'#'
+                }
             ]
         }
     }
@@ -147,6 +166,21 @@ export default {
 
         button#btn-subscribe{
             background-color: #222E51;
+            color: #2844AA;
+            box-shadow: 0 0 3px #2844AA;
+        }
+
+        button#btn-subscribe:hover{
+            background-color: #2844AA;
+            color: white;
+        }
+
+        div#socials a{
+            color: white;
+        }
+
+        div#socials a:hover{
+            color: #2F55D4;
         }
     }
 

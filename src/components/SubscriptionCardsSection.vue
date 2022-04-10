@@ -25,7 +25,7 @@
                             <li class="d-flex align-items-center text-secondary fw-bold mb-2" v-for="(element, index) in propertiesPlan" :key="index"><span class="fas fa-check my-fa-check-blue me-2"></span>{{ element.property }}</li>
                         </ul>
                         <div class="card-text d-flex text-center mb-3">
-                            <a class="col-12 me-3 text-decoration-none p-2 text-white my-blue-bg rounded shadow-lg" href="#">Buy Now</a>
+                            <a id="buy-now" class="col-12 me-3 text-decoration-none p-2 text-white my-blue-bg rounded shadow-lg" href="#">Buy Now</a>
                         </div>
                         <span class="card-text text-secondary">*No credit card required</span>
                     </div>
@@ -113,13 +113,27 @@ export default {
     div.card{
         border-bottom: 4px solid rgb(150, 150, 150);
         border-radius: 15px ;
+        transition: all .2s ease-in-out;
+        
 
         span#plans{
             padding: .5rem 1.5rem;
         }
     }
 
+    div.card:hover{
+        transform: scale(1.05);
+        border-bottom: 4px solid #2F55D4;
+        box-shadow: 0 0 15px rgb(200, 200, 200);
+    }
+
     button#btn-getStarted{
         background-color: #2F55D4
     }
+
+    div.card a#buy-now:hover, 
+    button#btn-getStarted:hover{
+        background-color: #2844AA;
+    }
+
 </style>
