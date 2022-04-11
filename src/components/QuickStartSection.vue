@@ -1,7 +1,7 @@
 <template>
 <!-- SECTION QUICK START -->
 <section>
-    <div class="container py-5">
+    <div class="container p-5">
         <!-- QUICK START TEXT -->
         <div class="row text-center">
             <div class="col-12">

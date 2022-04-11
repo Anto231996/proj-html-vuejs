@@ -13,9 +13,9 @@
 
     <!-- MENU NAV -->
             <div class="col">
-                <ul class="d-flex p-0 mb-0 gap-4">
+                <ul class="d-flex justify-content-between p-0 mb-0 gap-4">
                     <li class="list-unstyled text-uppercase fw-bold" v-for="(link, index) in linksNavigation" :key="index">
-                        <a :id="(index === activeLink) ? 'active-link-header' : '' "  @click="changeActiveLink(index)" class="d-flex align-items-center text-decoration-none gap-2" :href="link.url">{{ link.title }} <i v-if="link.dropdownArrow !== false" class="fas fa-angle-down"></i></a>
+                        <a :id="(index === activeLink) ? 'active-link-header' : '' "  @click="changeActiveLink(index)" class="d-flex align-items-center text-decoration-none gap-2" :href="link.url">{{ link.title }} <i v-if="link.dropdownArrow == true" class="fas fa-angle-down"></i></a>
                     </li>
                 </ul>
             </div>

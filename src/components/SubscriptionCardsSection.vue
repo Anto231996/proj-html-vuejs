@@ -14,8 +14,11 @@
         <!-- SUBSCRIPTION CARD PLANS -->
         <div class="row mb-5">
             <div class="col-12 col-lg-4 mb-5" v-for="(card, index) in subscriptionPlans" :key="index">
-                <div class="card p-4">
+                <div class="card overflow-hidden p-4">
                     <div class="card-body">
+                        <span v-if="card.best == true" class="label-card">
+                            Best
+                        </span>
                         <span id="plans" class="d-inline-block fw-bold my-blue-text my-alice-blue-bg border rounded-pill mb-3">{{ card.planType }}</span>
                         <h2 class="card-text fw-bold">{{ card.price }}</h2>
                         <p class="card-text text-secondary">Per Month</p>
@@ -39,10 +42,11 @@
             <div class="col-12 col-lg-6">
                 <h2 class="fw-bold mb-4">Want to be among the first to find out?</h2>
                 <p class="text-secondary mb-4">Start working with <span class="my-blue-text fw-bold">Landrick</span> that can provide everthing you need to generate <br> awareness, drive traffic, connect.</p>
-                <div class="input-group">
+                <form class="input-group">
+                    <label for="email"></label>
                     <input type="email" class="form-control" placeholder="Email Address">
                     <button id="btn-getStarted" class="btn text-white btn-outline-secondary" type="sumbmit">Get Started</button>
-                </div>
+                </form>
             </div>
         </div>
         <!-- /SUBMIT -->
@@ -63,19 +67,22 @@ export default {
                 {
                     planType:'Basic',
                     price: '$9.00',
-                    text: 'All the basics for businesses that are just getting started'
+                    text: 'All the basics for businesses that are just getting started',
+                    best: false
                 },
 
                 {
                     planType:'Business',
                     price: '$39.00',
-                    text: 'Better for growing businesses that want more customers.'
+                    text: 'Better for growing businesses that want more customers.',
+                    best: true
                 },
 
                 {
                     planType:'Enterprise',
                     price: '$79.00',
-                    text: 'Advanced features for pros who need more customization.'
+                    text: 'Advanced features for pros who need more customization.',
+                    best: false
                 }
             ],
 
@@ -132,6 +139,22 @@ export default {
     div.card a#buy-now:hover, 
     button#btn-getStarted:hover{
         background-color: #2844AA;
+    }
+
+    .label-card{
+        width: 160px;
+        height: 32px;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+        background: #F17425;
+        transform: rotate(45deg);
+        position: absolute;
+        right: -42px;
+        top: 20px;
+        padding-top: 7px;
     }
 
 </style>

@@ -7,7 +7,6 @@
                 <p class="text-secondary">© 2020 Landrick. Design with <i class="fa fa-heart text-danger"></i> by Shreethemes</p>
             </div>
             <!-- /COPYRIGHT -->
-
             <!-- PAYMENT CARD -->
             <div class="col d-flex justify-content-end">
                 <img class="ms-2" v-for="(card, index) in paymentCards" :key="index" :src="require(`../assets/img/${card.logo}`)" :alt="card.name">

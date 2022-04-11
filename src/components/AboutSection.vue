@@ -88,7 +88,7 @@ export default {
 <style lang="scss">
 
 section#about{
-    padding-top: 150px;
+    padding-top: 100px;
 
     div#about-text span{
         font-size: .8rem;

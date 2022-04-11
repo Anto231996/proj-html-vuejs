@@ -39,7 +39,8 @@
                 <h5 class="text-white mb-4">Newsletter</h5>
                 <p class="text-secondary">Sign up and receive the latest tips via email.</p>
                 <p class="text-secondary fw-bold">Write your email <span class="text-danger">*</span></p>
-                <form class="row g-3">
+                <form class="row input-group g-3">
+                    <label for="email"></label>
                     <input type="email" id="inputEmail" class="form-control text-white" placeholder="Your email:">
                     <button type="submit" id="btn-subscribe" class="btn">Subscribe</button>
                 </form>
