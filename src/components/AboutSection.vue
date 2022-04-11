@@ -9,7 +9,7 @@
                 <div id="about-text" class="col-12 col-md-6">
                     <span class="d-inline-block my-blue-text my-alice-blue-bg border fw-bold rounded-pill mb-3">Development</span>
                     <h1 class="mb-4 fw-bold">A Complete<br>Developer Toolset</h1>
-                    <p class="mb-4 text-secondary">Launch your campaign and benefit from our expertise on designign and managing conversion centered bootstrap4 html page.</p>
+                    <p class="mb-4 text-secondary">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
                     <div class="mb-4 fw-bold">
                         <a class="me-3 text-decoration-none p-2 text-white my-blue-bg rounded shadow" href="#">Get Started</a>
                         <a class="text-decoration-none p-2 my-blue-text rounded" href="#">Documentation</a>
