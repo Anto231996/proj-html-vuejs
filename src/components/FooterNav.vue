@@ -59,6 +59,7 @@ export default {
 
     data: function () {
         return{
+            /* LISTA DEI LINK NELLA SEZIONE COMPANY */
             companyListLinks:[
                 {
                     name:'About us',
@@ -101,6 +102,7 @@ export default {
                 }
             ],
 
+            /* LISTA DEI LINK NELLA SEZIONE USEFULL */
             usefullLinks:[
                 {
                     name:'Terms of Services',
@@ -128,6 +130,7 @@ export default {
                 }
             ],
 
+            /* LISTA DEI SOCIALS */
             socialsList:[
                 {
                     logo:'fab fa-facebook-square',

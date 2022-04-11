@@ -11,7 +11,7 @@
             </div>
     <!-- /MAIN LOGO -->
 
-    <!-- MENU NAV -->
+    <!-- NAVBAR -->
             <div class="col">
                 <ul class="d-flex justify-content-between p-0 mb-0 gap-4">
                     <li class="list-unstyled text-uppercase fw-bold" v-for="(link, index) in linksNavigation" :key="index">
@@ -19,9 +19,9 @@
                     </li>
                 </ul>
             </div>
-    <!-- /MENU NAV -->
+    <!-- /NAVBAR -->
 
-    <!-- BUTTON NAV -->
+    <!-- BUTTONS NAV -->
             <div class="col d-none d-lg-inline-block">
                 <div id="buttons-navigation" class="d-flex justify-content-end gap-3">
                     <a class="btn">
@@ -38,7 +38,7 @@
                     </a>
                 </div>
             </div>
-    <!-- /BUTTON NAV -->
+    <!-- /BUTTONS NAV -->
 
         </div>
     </nav>
@@ -53,9 +53,10 @@ export default {
 
     data:function() {
         return{
-
+            /* LINK ATTIVO */
             activeLink: 1,
 
+            /* LISTA DEI LINK DELLA NAVBAR */
             linksNavigation:[
                 {
                     title: 'home',
@@ -85,6 +86,7 @@ export default {
     },
 
     methods:{
+        /* FUNZIONE CHE CAMBIA IL LINK DELLA NAVBAR RENDENDOLO ATTIVO */
         changeActiveLink(index){
             if (this.linksNavigation[index] !== undefined){
                 this.activeLink = index;

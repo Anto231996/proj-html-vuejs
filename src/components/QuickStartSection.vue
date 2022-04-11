@@ -45,7 +45,7 @@ export default {
         return{
             
             activeButton: 0,
-
+            /* LISTA DEI PACKAGE E COME INSTALLARLI */
             buttonsQuickStart:[
                 {
                     name: 'npm',
@@ -75,6 +75,8 @@ export default {
     },
 
     methods:{
+
+        /* FUNZIONE CHE CAMBIA IL BUTTON RENDENDOLO ATTIVO */
         changeActiveButton(index){
             if (this.buttonsQuickStart[index] !== undefined){
                 this.activeButton = index;

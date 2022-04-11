@@ -40,6 +40,7 @@ export default {
 
     data: function(){
         return{
+            /* LISTA DELLA FEATURE CARDS */
             featureCards:[
                 {
                     icon: 'far fa-copy',

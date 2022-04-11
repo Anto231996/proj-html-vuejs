@@ -25,6 +25,8 @@ export default {
 
     data: function () {
         return{
+
+            /* LISTA DELLE METODI DI PAGAMENTO ACCETTATI */
             paymentCards:[
                 {
                     name:'American-Ex card',

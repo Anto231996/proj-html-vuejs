@@ -63,6 +63,8 @@ export default {
 
     data: function(){
         return{
+
+            /* LISTA DEI DEI DIVERSI PIANI DI ABBONAMENTO */
             subscriptionPlans:[
                 {
                     planType:'Basic',
@@ -86,6 +88,7 @@ export default {
                 }
             ],
 
+            /* LISTA DELLE CARATTERISTICHE DEI DIVERSI PIANI DI ABBONAMENTO */
             propertiesPlan:[
                 {
                     property: 'Full Access'

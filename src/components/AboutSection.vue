@@ -48,6 +48,7 @@ export default {
 
     data: function () {
         return{
+            /* LISTA DEGLI SPONSORS */
             sponsorBrands:[
                 {
                     name:'Amazon',
